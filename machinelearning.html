@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	 <title>JialeXian</title>
+	 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+ </head>
+ <style>
+
+	.container {
+	  margin: 0 auto;
+	  max-width: 100%;
+	  padding: 0 10px;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+.cell {
+	width: 25%;
+}
+
+.recommendedbooks{
+ height:200px;
+ padding:80px;
+ font-weight: 900;
+ font-size:40px;
+}
+
+.column1, .column2, .column3{
+	float:left;
+	width:400px;
+	padding:20px;
+}
+
+.container p.last{
+	margin-bottom: 30px;
+}
+
+
+#footer{
+	clear:left;
+}
+
+ </style>
+
+ <body>
+
+	 <div id='header'>
+ 		<h1>Jia Le Xian</h1>
+ 		<ul id="nav">
+ 			<li><a href='index.html' >All</a><li>
+ 			<li><a href='machinelearning.html' class="chosen">Machine Learning</a></li>
+
+ 			<li><a href='ux.html'>UX Design</a></li>
+ 			<li><a href='learning.html'>Learning</a></li>
+
+ 		</ul>
+ 	</div>
+
+
+		<div id="content">
+			<div class="set set1">
+        <a href="purine.html">
+				<img class="one" src="img/home_01.jpg" data-over="img/cover_ir.jpg" data-out="img/home_01.jpg" style="width:353px;height:489px;">
+      </a>
+        <p>
+					Purine-Rich Seafood Classifier for Gout Patients
+				</p>
+				<p class="last">
+					Fine-grained Live Camera Image Recognition
+				</p>
+			</div>
+
+
+
+
+
+
+			<div class="set set5">
+				<a href="rnotes.html">
+				<img class="five" src="img/home_03.jpg" data-over="img/cover_r.jpg" data-out="img/home_03.jpg" style="width:353px;height:489px;">
+			</a>
+				<p>
+					Notes of Machine Learning With R
+				</p>
+				<p class="last">
+					Machine Learning Principles
+				</p>
+			</div>
+
+			<div class="set set6">
+			 	<a href="alexa.html">
+				<img class="six" src="img/home_04.jpg" data-over="img/cover_nlp.jpg" data-out="img/home_04.jpg" style="width:353px;height:489px;">
+			</a>
+				<p>
+					Build Your Own Alexa
+				</p>
+				<p class="last">
+					Intel Voice Processing Developer Kit
+				</p>
+			</div>
+		</div>
+
+	 <div class="feature">
+	 	<h2 class="recommendedbooks">Recommended Books</h2>
+	 </div>
+	 <div class="lightbox">
+			<div class="innerLight">
+			<div class="close">X</div>
+			<img src="./img/book_1.jpg">
+			<div class="text">
+			<div class="title">TITLE</div>
+			</div>
+			</div>
+	 </div>
+	 <div class="container">
+		 <div class="grid">
+		 <div class="cell">
+		 <img class="respond" data-title="Deep Leraning Written By Creator of GAN" src="img/book_1.jpg" data-filename="book_1.jpg" style="width:300px;height:270px;">
+		 <p>
+			 By Ian Goodfellow
+		 </p>
+     <p class="last">
+       Great For General Understanding
+     </p>
+		 </div>
+		 <div class="cell">
+		 <img class="respond" data-title="Deep Leraning With Python Written BY Creator of Keras" src="img/book_2.jpg" data-filename="book_2.jpg" style="width:240px;height:270px;">
+		 <p>
+			 By Francosis Collet
+		 </p>
+     <p class="last">
+       Great For Practice
+     </p>
+		 </div>
+     <div class="cell">
+		 <img class="respond" data-title="Deep Leraning Written By O'reilly Team" src="img/book_3.jpg" data-filename="book_3.jpg" style="width:240px;height:270px;">
+		 <p>
+      By O'reilly
+     </p>
+		 <p class="last">
+			 Great For Hands-on Projects
+		 </p>
+     </div>
+	   <div class="cell">
+		 <img class="respond" data-title="Machine Leraning With R" src="img/book_4.jpg" data-filename="/book_4.jpg" style="width:240px;height:270px;">
+		 <p>
+			 By Brett Letz
+		 </p>
+     <p class="last">
+       Great For General Rules of Machine Learning
+     </p>
+		 </div>
+		 </div>
+		 </div>
+
+	 </div>
+	 <article>
+		 <h1>Machine Learning In Healthcare</h1>
+
+	   <p class="column1">
+			 Medical Image Analysis- Product Level Application Of Machine Laerning In Healthcare.
+			 Application of machine leraning in computer vision and pattern recognition. X-ray reading by neural networks on mobile devices.
+		 </p>
+		 <p class="column2">
+			 Natural Language Processing- Voice Processing Devices With Neural Network. Alexa like voice enabled devices and application in healthcare settings.
+
+		 </p>
+		 <p class="column3">
+			 Data Preprocessing- Model Training On Small Data Samples.The biggest challenge of training models in medical images is the small dataset. Inetrested in exploring model architetures and best data agmentation policy to generate datasets.
+		 </p>
+
+ </article>
+
+	 <div id="footer">
+
+		 <p>&copy; Copyright 2022</p>
+	 </div>
+
+	 <script src="js/jquery-1.11.3.min.js"></script>
+	 	<script src="./js/scripts.js"></script>
+	 <script>
+
+	 </script>
+
+ </body>
+</html>

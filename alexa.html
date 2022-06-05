@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a><li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+<head>
+	<title>JialeXian</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+
+article{
+  padding-left:20px;
+  padding-right:20px;
+  font-size: 16px;
+  text-align:left;
+  line-height: 1.5em;
+  margin-top:20px;
+  letter-spacing: 1px;
+}
+
+#featuredimg{
+  margin:0px;
+}
+
+.supportingimg{
+  margin:auto;
+  display:block;
+  padding:20px;
+}
+article p{
+  margin:10px;
+}
+
+table{
+  margin:auto;
+  display:block;
+  margin-left:300px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+.reference{
+  padding-left:20px;
+  padding-right:20px;
+  font-size: 16px;
+  text-align:left;
+  line-height: 1.5em;
+  margin:40px;
+  letter-spacing: 1px;
+}
+
+.card p{
+  text-align: left;
+}
+
+.mySlides {display:none;}
+
+.display-container{
+  margin:auto;
+  display:block;
+  width:400px;
+}
+
+
+</style>
+
+<div class="header">
+  <h1>Build Your Own Alexa In an Hour Using Raspberry Pi & Intel Voice Kit</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <img class="featuredimg" src="img/alexa.jpeg" alt="Alexa Built With Rasperry Pi" style="height:400px"/>
+      <article>
+      <p>
+        This is a recap of workshop held by Amazon’s Alexa team and Intel’s smart home team (May 2018, San Francisco). Alexa is probablly the most popular voice kit in the market. I am using Alexa at home and love it. I always curious about its application in healthcare. Maybe in the near future your doctor’s follow up will not be a phone call but through Alexa.
+      </p>
+      <p>First, how Alexa works? It seem to be quite simple, but the technology behind it is quite completed. Here is one of the slides shared by the Alexa team.</p>
+      <img class="supportingimg" src="img/a29.jpeg" alt="Alexa Workflow" style="height:400px"/>
+<p>So, what do you need to build your own Alexa enabled device?</p>
+<p>1. Raspberry pi</p>
+<p>2. Power supply for raspberry pi</p>
+<p>3. Earphone</p>
+<p>4. Intel Speech Enabling Developer Kit</p>
+<p>5. A desktop (or a laptop connect with a mouse, you have to use a mouse to control your screen)</p>
+<p>6. Amazon developer account</p>
+<div class="display-container">
+  <img class="mySlides" src="img/a41.jpeg" alt="Alexa Workflow" style="width:400px"/>
+  <img class="mySlides" src="img/a42.jpeg" alt="Alexa Workflow" style="width:400px"/>
+  <img class="mySlides" src="img/a43.jpeg" alt="Alexa Workflow" style="width:400px"/>
+  <img class="mySlides" src="img/a45.jpeg" alt="Alexa Workflow" style="width:400px"/>
+</div>
+  <p>The steps have been detailed here:
+</p>
+  <p a href="https://avs-dvk-workshop.github.io/">https://avs-dvk-workshop.github.io/</a></p>
+  <p> Following the steps strictly and don’t miss any details.
+  </p>
+  <p> There are some tricky steps I found out in the workshop:</p>
+  <p>1. Connect the Intel Speech Enabling Developer Kit: the light should be a circle light. If it’s just one light one, just re-plug it.</p>
+  <p>2. When you’re asked about product ID, client ID and Secret, you can go to your Amazon developer console:<a href="https://developer.amazon.com/avs/home.html#/avs/home">https://developer.amazon.com/avs/home.html#/avs/home</a></p>
+  <p>3. Click the manage on your right and you will find your client ID and secret. Copy and paste to your terminal.</p>
+  <p>4. After an hour , you have your own Alexa enabled device. Watch what happened when you awake Alexa:</p>
+
+  <p>Enjoy your own Alexa!</p>
+</article>
+</div>
+    <div class="card">
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>GitHub</h2>
+      <p><a href="https://avs-dvk-workshop.github.io/">https://avs-dvk-workshop.github.io/</a></p>
+    </div>
+    <div class="card">
+      <h2>Language & Lib Used</h2>
+       <p>Python</p>
+       <p>AWS</p>
+       <p>Alexa</p>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="footer">
+  <p>&copy; Copyright 2022</p>
+</div>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

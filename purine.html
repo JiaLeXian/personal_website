@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JialeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<style>
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+</style>
+
+<div class="header">
+  <h1>Computer Vision & Machine Learning: Purine-Rich Seafood Project-Revision Gout</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+     
+      <article>
+        <p>On March 5th, 2018, OpenAI opened its door for its first ever Hackathon. In 6 hours, I and other team members worked on a project to live detect purine rich seafoods for gout patients. OpenAI blogpost about this project:<a href="https://blog.openai.com/hackathon-follow-up">https://blog.openai.com/hackathon-follow-up</a>.
+        </p>
+        <p>Team member: Clarence Leung (Neflix) , Kyle Zheng (E-bay) , Madeline Hawkins (UCSC), Stergios Hetelekides (Tesla) and Jia le Xian (Lizora).</p>
+        <p>In the Hackathon, we retrained OpenCV to recognize 7 types of purine-rich seafood for gout patients (Figure 1). Consumption of these types of seafood will worse gout patients’ pain and increase possibilities of future gout attack: a sharp
+          and intense pain in the joints. After training the model, we deployed it to a mobile device (Iphone X). We use pre-labeled dataset Food 101 for the training. </p>
+
+        <p>Figue 1</P>
+        <p>YesNocevicheclam_chowdergrilled_salmoncrab_cakes lobster_bisque lobster_roll_sandwich mussels oysters scallops tuna_tartare
+          Notes: these are seafood labels included in the Food 101 dataset.</p>
+        <table>
+          <tr>
+            <th>Food 101 Dataset</th>
+          </tr>
+          <tr>
+            <td>clam_chowder</td>
+          </tr>
+          <tr>
+            <td>grilled_salmonclam_chowder</td>
+          </tr>
+          <td>crab_cakes</td>
+          <tr>
+            <td>lobster_bisque</td>
+          </tr>
+          <tr>
+            <td>lobster_roll_sandwich</td>
+          </tr>
+          <tr>
+            <td>mussels</td>
+          </tr>
+          <tr>
+            <td>oysters</td>
+          </tr>
+          <tr>
+            <td>scallops</td>
+          </tr>
+          <tr>
+            <td>tuna_tartare</td>
+          </tr>
+          </tr>
+        </table>
+        <p><b>Update:</b> After the Hackathon, I continue working on the project and hope to open source it in Jan. The dataset of seafood increased from 7 categories to a total of 12 categories covering all purine-rich seafood. The total dataset
+          increased from 3000 images to about 20,000 images of purine-rich seafood. Dataset will be published on Github soon.</p>
+        <p><b>Background:</b> Gout is a common form of arthritis that usually affects one joint at a time and is very painful. (Figure 2) In the U.S., in 2007 to 2008, the condition affects 8.3 million people, or 3.9% of the population.</p>
+        <img class="supportingimg" src="img/goutxray.jpeg" alt="X-ray of Gout Patient from Baidu.com" style="height:400px">
+        <p>A 12-year study did by Harvard University team have showed the direct correlation between purine-rich seafood and increased possibility of gout attack. Usually, patients are told to avoid seafood in doctor office visits, however, seafood
+          is a broad category.</p>
+        <p>There are 89 types of seafood in the market.In fact, only selected type of seafood need to be avoided, according to Mayo Clinic and U.S. Centers For Disease Control and Prevention (USCDC). These types of seafood are higher in purines than
+          other types: anchovies, herring, sardines, mussels, scallops, trout, haddock, mackerel and tuna.</p>
+        <p>In addition, for people who live in coastal cities and countries that rely on seafood as their primary source of animal protein, it is almost impossible to avoid all types of seafood. Memorizing all types of seafood to avoid is a daily
+          struggle for gout patients and their family. Our goal is to make this process easier.</p>
+        </p>
+    </div>
+    <div class="reference">
+      <p>Reference:</p>
+      <p>1. Gout: Symptoms and Causes by Mayo Clinic. (2018, January 11). Retrieved March 06, 2018, from <a href="http://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897">
+          http://www.mayoclinic.org/diseases-conditions/gout/symptoms-causes/syc-20372897</a></p>
+      <p>2. Gout: Centers For Disease Control and Prevention. (2017, April 14). Retrieved March 06, 2018, from <a href="https://www.cdc.gov/arthritis/basics/gout.html">https://www.cdc.gov/arthritis/basics/gout.html</a>
+      </p>
+      <p>3. Zhu Y, Pandya BJ, Choi HK. Prevalence of Gout and Hyperuricemia in the US General Population: The National Health and Nutrition Examination Survey 2007–2008.Arthritis Rheum. 2011;63:3136–3141.</p>
+      <p>4. Choi, H., M.D., Dr.P.H, Atkinson, K., M.D., M.P.H, Karlson, E., M.D, Willett, W., M.D., Dr.P.H, & Curhan, G., M.D., Sc.D. (2004, March 11). Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout in Men | NEJM. Retrieved March
+        06, 2018, from <a href="http://www.nejm.org/doi/full/10.1056/NEJMoa035700">http://www.nejm.org/doi/full/10.1056/NEJMoa035700</a>
+      </p>
+      <p>5. List of types of seafood. (2018, February 28). Retrieved March 06, 2018, from <a href="https://en.wikipedia.org/wiki/List_of_types_of_seafood">https://en.wikipedia.org/wiki/List_of_types_of_seafood</a></p>
+      <p>6. Gout diet: Whats allowed, whats not. (2015, July 17). Retrieved March 06, 2018, from <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/gout-diet/art-20048524">https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/gout-diet/art-20048524</a></p>
+      <p></p>
+    </div>
+    </article>
+    <div class="card">
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>GitHub</h2>
+      <p><a href="https://github.com/CathyXian/Gout">https://github.com/CathyXian/Gout</a></p>
+    </div>
+    <div class="card">
+      <h2>Language & Lib Used</h2>
+      <p>Python</p>
+      <p>Swift</p>
+      <p>OpenCV</p>
+      <p>ARkit by Apple</p>
+      <p>CoreML by Apple</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2018</p>
+</div>

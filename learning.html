@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JialeXian</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<style>
+	/* Style tab links */
+
+	* {
+		box-sizing: border-box
+	}
+
+	body,
+	html {
+		height: 100%;
+		margin: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.tablink {
+		background-color: white;
+		color: #36454f;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 33%;
+	}
+
+	.tablink:hover {}
+
+	.tabcontent {
+		color: #36454f;
+		display: none;
+		padding: 100px 20px;
+		height: 100%;
+		text-align: left;
+	}
+
+	.tabcontent p {
+		padding: 20px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+
+	.tabcontent h3 {
+		text-align: left;
+		margin-bottom: 20px;
+		margin-left: 30px;
+	}
+
+	.tabcontent h4 {
+		text-align: left;
+		margin-bottom: 20px;
+		margin-left: 30px;
+	}
+
+	#Beginner {
+		background-color: #D6EAF8;
+	}
+
+	#Medium {
+		background-color: #D6EAF8;
+	}
+
+	#Advanced {
+		background-color: #D6EAF8;
+	}
+</style>
+
+<body>
+
+	<div id='header'>
+		<h1>Jia Le Xian</h1>
+
+		<ul id="nav">
+			<li><a href='index.html'>All</a>
+				<li>
+					<li><a href='machinelearning.html'>Machine Learning</a></li>
+
+					<li><a href='ux.html'>UX Design</a></li>
+					<li><a href='learning.html' class="chosen">Learning</a></li>
+
+
+		</ul>
+	</div>
+
+	<button class="tablink" onclick="openPage('Beginner', this, '#D6EAF8')">Beginner</button>
+	<button class="tablink" onclick="openPage('Medium', this, '#D6EAF8')" id="defaultOpen">Medium</button>
+	<button class="tablink" onclick="openPage('Advanced', this, '#D6EAF8')">Advanced</button>
+
+	<div id="Beginner" class="tabcontent">
+		<h3>Learning Resources For Beginer's Guide For Machine Learning</h3>
+		<h4>Stanford Machine Learning Class Resources</h4>
+		<p>https://see.stanford.edu/course/cs229</p>
+		<h4>Deep Learning Specialization By Andrew Ng</h4>
+		<p>https://www.coursera.org/courses?languages=en&query=machine+learning+andrew+ng</p>
+		<h4>Beginer's Guide To Jupyter Notebook</h4>
+		<p>https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook</p>
+		<h4>Beginer's Guide To Linear Algebra</h4>
+		<p>https://www.coursera.org/learn/linear-algebra-machine-learning</p>
+	</div>
+
+	<div id="Medium" class="tabcontent">
+		<h3>Learning Resources For Medium Level Guide For Machine Learning</h3>
+		<h4>Tensorflow Resources By Google </h4>
+		<p>https://www.tensorflow.org/</p>
+		<h4>Machine Learning with R - Second Edition: Expert techniques for predictive modeling to solve all your data analysis problems</h4>
+		<p>https://www.amazon.com/Machine-Learning-techniques-predictive-modeling/dp/1784393908/ref=pd_lpo_sbs_14_img_0?_encoding=UTF8&psc=1&refRID=VH8DV9097JQC140THBP5</p>
+		<h4>Machine Learning With Python</h4>
+		<p>https://www.manning.com/books/deep-learning-with-python</p>
+		<h4>TensorFlow Github Projects</h4>
+		<p>https://github.com/tensorflow</p>
+	</div>
+
+	<div id="Advanced" class="tabcontent">
+		<h3>Learning Resources For Advanced Level Guide For Machine Learning</h3>
+		<h4>fast.ai </h4>
+		<p>http://www.fast.ai/</p>
+		<h4>AI Classes By Google For Developers</h4>
+		<p>https://developers.google.com/machine-learning/crash-course/</p>
+		<h4>TensorFlow Dev Summit</h4>
+		<p>https://www.youtube.com/watch?v=gplTc2F5Wvk</p>
+		<h4>Keras Documentation</h4>
+		<p>https://keras.io/</p>
+	</div>
+	</div>
+
+
+
+	</div>
+	<article>
+
+	</article>
+
+	<div id="footer">
+
+		<p>&copy; Copyright 2022</p>
+	</div>
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script>
+		function openPage(pageName, elmnt, color) {
+			// Hide all elements with class="tabcontent" by default */
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Remove the background color of all tablinks/buttons
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+
+			// Show the specific tab content
+			document.getElementById(pageName).style.display = "block";
+
+			// Add the specific color to the button used to open the tab content
+			elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+</body>
+
+</html>

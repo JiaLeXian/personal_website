@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JialeXian</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<style>
+	body {
+		margin: 0px auto;
+	}
+
+	article h1 {
+		margin: 20px;
+	}
+
+	article p {
+		margin: 20px;
+	}
+
+	article p.lastline {
+		margin: 20px;
+		margin-bottom: 120px;
+	}
+</style>
+
+<body>
+
+	<div id='header'>
+		<h1>Jia le Xian</h1>
+
+		<ul id="nav">
+			<li><a href='index.html' class="chosen">All</a>
+			<li>
+			<li><a href='machinelearning.html'>Machine Learning</a></li>
+
+			<li><a href='ux.html'>UX Design</a></li>
+			<li><a href='learning.html'>Learning</a></li>
+
+
+
+		</ul>
+	</div>
+
+	<div id="content">
+		<div class="set set1">
+
+			<a href="purine.html">
+				<img class="one" src="img/home_01.jpg" data-over="img/cover_ir.jpg" data-out="img/home_01.jpg" style="width:353px;height:489px;">
+			</a>
+			<p>
+				Purine-Rich Seafood Classifier for Gout Patients
+			</p>
+			<p class="last">
+				Fine-grained Live Camera Image Recognition
+			</p>
+		</div>
+
+
+
+
+<div class="set set4">
+	<a href="ux.html">
+			<img class="four" src="img/home_06.jpg" data-over="img/cover_ux.jpg" data-out="img/home_06.jpg" style="width:353px;height:489px;">
+		</a>
+			<p>
+				Personalized News Feeds
+			</p>
+			<p class="last">
+				New York Times-Concept Project
+			</p>
+		</div>
+
+
+		<a href="rnotes.html">
+			<div class="set set5">
+				<img class="five" src="img/home_03.jpg" data-over="img/cover_r.jpg" data-out="img/home_03.jpg" style="width:353px;height:489px;">
+		</a>
+		<p>
+			Notes of Machine Learning With R
+		</p>
+		<p class="last">
+			Machine Learning Principles
+		</p>
+
+	</div>
+
+	<a href="alexa.html">
+		<div class="set set6">
+			<img class="six" src="img/home_04.jpg" data-over="img/cover_nlp.jpg" data-out="img/home_04.jpg" style="width:353px;height:489px;">
+	</a>
+	<p>
+		Build Your Own Alexa
+	</p>
+	<p class="last">
+		Intel Voice Processing Developer Kit
+	</p>
+	</div>
+	</div>
+	<article>
+		<h1>About Me</h1>
+
+		<p>
+			Machine learning engineer in healthcare. Interested in medical image analyis and computed aided medicine in general.
+		</p>
+		<p class="lastline">
+			UX is my hobby and in the journey to explore AR and VR in healthcare. This website is made with Javascript, HTML/CSS and Jquery by me.
+		</p>
+
+
+
+	</article>
+
+
+	<div id="footer">
+
+		<p>&copy; Copyright 2022</p>
+	</div>
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script>
+		function Hover(theHover) {
+			theHover.overSrc = theHover.dataset.over;
+			theHover.outSrc = theHover.dataset.out;
+
+			theHover.addEventListener('mouseover', function() {
+				theHover.src = theHover.overSrc;
+			});
+
+			theHover.addEventListener('mouseout', function() {
+				theHover.src = theHover.outSrc;
+			});
+
+		}
+
+		var theOne = document.querySelector("img.one");
+		Hover(theOne);
+
+		//var theTwo = document.querySelector("img.two");
+	//	Hover(theTwo);
+
+	//	var theThree = document.querySelector("img.three");
+	//	Hover(theThree);
+
+		var theFour = document.querySelector("img.four");
+		Hover(theFour);
+
+		var theFive = document.querySelector("img.five");
+		Hover(theFive);
+
+		var theSix = document.querySelector("img.six");
+		Hover(theSix);
+	</script>
+
+</body>
+
+</html>

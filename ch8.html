@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>Jia Le Xian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 8 : Maket Basket Analysis</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Market basket analysis</b></p>
+        <p>The results of a market basket analysis are actionable patterns.</p>
+        <p><b>Using:</b></p>
+        <p>Using simple performance measures to find associations in large database.
+          Understanding the peculiarities of transactional data
+          Knowing how to identify the useful and actionable patterns</p>
+        <p>Association rules are not used for prediction, but rather for unsupervised knowledge discovery in large databases.</p>
+        <p>Association rules learners are unsupervised, there is no need for the algorithm to be trained; data doesn’t need to be labeled ahead of time.</b>
+        </p>
+        <p>Apriori, use a simple prior ()that is, a priori) belief about the properties of frequent itemsets.</p>
+        <p>Apriori property can reduce the number of rules to be learned.</p>
+        <p>Support measures how frequently it occurs in the data.
+        </p>
+        <p>Support(X)=count(X)/N</p>
+        <p>N is the number of transactions in the database and count(X) is the number of transactions containing items X.</p>
+        <p>A rule’s confidence is a measurement of its predictive power or accuracy. It is defined as the support of the items containing both X and Y divided by the support of the items containing only X:</p>
+        <p>Confidence(X-Y)=support(x,y)/support(x)</p>
+        <p>Confidence tells us the proportion of transactions where the presence of item or items X results in the presence of item or itemset.</p>
+        <p><b>2 Steps of building rules with Apriori principle:</b></p>
+        <p>Identifying all the item sets that meet a minimum support threshold.
+          Creating rules from these item sets using those meeting a minimum confidence threshold.</p>
+
+        <p><b>Key Point 1:</b></p>
+        <p>The best example of Apriori rules’ application probablly maybe product recommendation by Amazon and Neflix. It’s also potential to detect potential disease from lifestyle data.</p>
+        <p>Based on the fact that Apriori rules use prior belief about properties, it is most useful in combining domain knowledge and the use of the machine learning knowledge. Just using the dataset itself maybe have limitations.</p>
+        <p><b>Key Point 2:</b></p>
+
+        <p> It is very tricky to use the Apriori rules, especially in commercial environment. Most of time, the dataset will produce choice sets either doesn’t make sense or it’s just common knowledge. The value os the analysis will lie on finding
+          with the highest support, confidence, or lift and the actionable result. Even after we got the perfect choice set, why people made the choice is still unclear just by providing the datasets.</p>
+
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

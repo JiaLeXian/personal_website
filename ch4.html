@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+    <li><a href='arvr.html'>AR/VR</a></li>
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+    <li><a href='chatbot.html'>ChatBot</a></li>
+  </ul>
+</div>
+
+<head>
+  <title>JialeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 4 : Naive Bayes</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>What is Bayesian Methods:</b></p>
+        <p>Classifiers based on Bayesian methods utilize training data to calculate an observed probability of each outcome based on the evidence provided by feature values.It uses the observed probabilities to predict the most likely class for the
+          new features.</p>
+        <p><b>Used For:</b></p>
+        <p>. Text classification, such as junk email(spam) filtering</p>
+        <p>. Intrusion or anomaly detection in computer networks</p>
+        <p>. Diagnosing medical conditions given a set of observed symptoms</p>
+
+        <p><b>Best For:</b>
+        </p>
+        <p>Problems in which the information from numerous attributes should be considered simultaneously in order to estimate the overall probability of an outcome. Use all the available evidence to subtly change the predictions.</p>
+        <p>Probability:</p>
+        <p>P(A∩ B)=P(A)*P(B) : the probability of A & B happen at the same the time= the probability of A happening* the probability of B happening
+        </p>
+        <p>P(A|B)=P(A∩ B）/ p(B)
+        </p>
+        <p>The probability of event A, given that event B occurred. (conditional probability): the probability of A is dependent(that is, conditional) on what happened with event B. The estimate of P(A|B) should be based on P(A∩ B), a measure of how
+          often A and B are observed to occur together, and P(B), a measure of how often B is observed to occur in general.</p>
+        <p>P(A|B)=P(B|A)*P(A )/ P(B)</p>
+        <p><b>Strengths of Bayes Algorithm:</b></p>
+        <p>. Simple, fast, and very effective</p>
+        <p>. Does well with noisy and missing data</p>
+        <p>. Requires relatively few examples for training, but also works well with very large numbers of examples</p>
+        <p>. Easy to obtain the estimated probability for a prediction</p>
+        <p><b>Weakness:</b></p>
+        <p>Relies on an often-faulty assumption of equally important and independent features</p>
+        <p>Not ideal for datasets with many numeric features</p>
+        <p>Estimated probabilities are less reliable than the predicted classes</p>
+        <p><b>The Laplace Estimator</b></p>
+        <p>Adds a small number to each of the counts in the frequency table, which ensures that each feature has a non-zero probability of occurring with each class. Usually the number is set to be 1.</p>
+        <p>Lantz, Brett. Machine Learning with R – Second Edition – Deliver Data Insights with R and Predictive Analytics (p. 29). Packt Publishing. Kindle Edition.</p>
+
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+    <li><a href='arvr.html'>AR/VR</a></li>
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+    <li><a href='chatbot.html'>ChatBot</a></li>
+  </ul>
+</div>
+
+<head>
+  <title>CathyXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 5 : Decision Trees</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Decision Tree</b></p>
+        <p>A decision tree classifier uses a structure of branching decisions, which channel examples into a final predicted class value.</p>
+        <p><b>Potencial Use:</b></p>
+        <p>. Credit scoring models in which the criteria that causes an applicant to be rejected need to be clearly documented and free from bias</p>
+        <p>. Marketing studies of customer behavior such as satisfaction or churn, which will be shared with management or advertising agencies</p>
+        <p>. Diagnosis of medical conditions based on laboratory measurements, symptoms, or the rate of disease progression</p>
+
+        <p><b>The C5.0 Decision Tree Algorithm:</b>
+        </p>
+        <p>Strength:</p>
+        <p>. An all-purpose classifier that does well on most problems</p>
+        <p>. Highly automatic learning process, which can handle numeric or nominal features as well as missing data</p>
+        <p>. Excludes unimportant features
+        </p>
+        <p>Weakness:</p>
+        <p>. It is easy to overfit or underfit the model</p>
+        <p>. Decision tree models are often biased towards splits on features having a large number of levelsCan have trouble modeling some relationships due to reliance on axis-parallel splits</p>
+        <p>. Small changes in the training data can result in large changes in decision logic</p>
+        <p>. Large trees can be difficult to interpret and the decisions they make may seem counterintuitive</p>
+        <p><b>How To Pick Splits</b></p>
+        <p>Common practice is to test various splits that divide the values into groups greater than or less than a numeric threshold. This reduces the numeric feature into a two-level categorical feature that allows information gain to be calculated as usual. The numeric cut point yielding the largest information gain is chosen for the split</p>
+        <p><b>Pruning The Decision Tree</b></p>
+        <p>The process of pruning a decision tree involves reducing its size such that it generalizes better to unseen data.</p>
+        <p><b>Post-pruning</b></p>
+        <p>Is more effective. Allows the algorithm to be certain that all the important data structures were discovered.</p>
+        <p>Reference for topic of entropy:</p>
+        <p>https://stackoverflow.com/questions/1859554/what-is-entropy-and-information-gain</p>
+
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

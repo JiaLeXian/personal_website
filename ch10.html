@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JiaLeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 10 : How To Evaluate Performance</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Key concepts in this chapter:</b></p>
+        <p>predict()</p>
+        <p>confusion metrics</p>
+        <p>accuracy</p>
+        <p>error rates</p>
+        <p>Kappa statistic Sensitivity and specificity Precision and recall F-measure</b>
+        </p>
+        <p>ROC curves</p>
+        <p><b>Key Point 1:</b></p>
+        <p>In evaluating performance of the data, probability analysis is important, especially in using confusion metrics to measure performance. The cross table has been used again. Among them, the Kappa statistic, sensitivity and specificity, precision and recall, and the F measure are frequently used. The concept of identifying mutually exclusive events in the model is also used in evaluation.
+        </p>
+        <p>It is easier to do the Kappa statistic when draw the data in table manner.</p>
+        <p><b>Key Point 2:</b></p>
+        <p>In real world problems, the cross-validation concepts is quite useful. In documents published by Microsoft on Axure’s evaluation of model’s performance, Cross-validation is named one of the most important tool to evaluate the model’s performance. Cross-validation can be used to retain and reevaluate the model. Also, the fact that it trains 10 folds of data, reduce computation calculation and is more efficient. It will be interesting to use the leave-one-out- method: use only one fold for each of the data’s example.</p>
+        <p>Every evaluation model has its trade-offs, it should consider cautiously them and more practice will have the process.</p>
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

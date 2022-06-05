@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JiaLeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 11 : Improve Performance</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Key Finding 1:</b></p>
+        <p>Parameter tuning: by increasing number of iterations from the default of 1 up to the value of 10.</p>
+        <p>Automatic parameter tuning: caret.</p>
+        <p>Customizing the tuning process: trainControl(): create a set of configuration options </p>
+        <p><b>Key Finding 2:</b></p>
+        <p>Meta-learning is practical and powerful by combing several models. Ensemble based model is better than single model, because:</b>
+        </p>
+        <p>Better generalizability to future problems.</p>
+        <p>Improved performance on massive or minuscule datasets.</p>
+        <p>The ability to synthesize data from distinct domains.
+        </p>
+        <p>A more nuanced understanding of difficult learning tasks.</p>
+        <p>Bagging: bagging is often used with decision trees, since they have the tendency to vary dramatically given minor changes in the input data.</p>
+        <p>package: ipred —-function: bagging()</p>
+        <p>Boosting (used in decision trees): 2 key distinctions from bagging: 1) the resampled datasets in boosting are constructed specifically to generate complementary learners. 2) rather than giving each learner an equal vote, boosting gives each learner’s vote a weight based on its past performance. Models that perform better have greater influence over the ensemble’s final prediction.</p>
+        <p>AdaBoost (Adaptive boosting): the algorithm is based on the idea of generating weak learners that iteratively lean a larger portion of the difficult-to-classify examples by paying more attention (that is, giving more weight) to frequently misclassified examples.</p>
+        <p>Radom forest(decision tree): easy to use and less prone to overfitting. Most popular machine learning tools.</p>
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

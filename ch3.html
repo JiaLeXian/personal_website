@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JialeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 3 : K-NN Algorithm</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>The powerful K-NN algorithm</b></p>
+        <p>The nearest-neighbor classification algorithm is widely used in machine learning. “Define by their characteristic of classifying unlabeled examples by assigning them the class of similar labeled examples.”</p>
+        <p>Problems like facial recognition used in Iphone X and movie recommendations used by Neflix can all be solved by using K-NN algorithms. Machine learning is already in our daily life.）</p>
+        <p>It would be useful if we could apply a real world problem by apply K-NN algorithm.</p>
+        <p>The importance of choosing the right criteria to analyze. The illustration of the Tomato example tells us the process of designing such project. But I wonder whether a Tomato is a fruit or vegetable should be a biological problem but not
+          judged by only two categories : sweetness and crunchiness. This lead to another question I have: how to make sure the categories we investigate is the key category to set the category apart.</p>
+
+        <p><b>The importance of labeling data correctly</b>
+        </p>
+        <p>The key to build a successful k-NN algorithm depends on the precision of labeling data. This is extremely crucial in image analysis. Most of image database are not labeled. We have to rely on manually label all images.</p>
+        <p>Labeling is a practical problem in medical image analysis. Because of HIPPA regulation, the use of patients’ image analysis are highly regulated. This create another problem, only doctors can label medical images correctly and it may
+          contain errors too.</p>
+        <p>Manually labeling images may slow the process and limit the number of the database. The study did by Google for eye problems among diabetic patients used only 135,000 images. In terms of database, it is not a big number. It may affect the
+          correctness of the final model.
+        </p>
+        <p>It may be great to test building a model use a small number of images.
+        </p>
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

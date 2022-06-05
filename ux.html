@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JialeXian</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<style>
+	* {
+		margin: 0px;
+	}
+
+	#content {
+		margin-left: 30px;
+	}
+
+	#content p {
+		margin-left: 10px;
+	}
+
+	.gallery {
+		position: relative;
+		width: 960px;
+		height: 450px;
+		left: 0px;
+		overflow: hidden;
+		display: inline-block;
+		float: left;
+		margin-top: 30px;
+		margin-left: 100px;
+	}
+
+	#footer {
+		clear: left;
+	}
+
+	.sliding .group1 {
+		width: 960px;
+		height: 450px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+
+	.top-right {
+		position: absolute;
+		top: 100px;
+		right: 16px;
+		width: 180px;
+		text-align: left;
+		font-size: 24px;
+	}
+</style>
+
+<body>
+
+	<div id='header'>
+		<h1>Jia Le Xian</h1>
+
+		<ul id="nav">
+			<li><a href='index.html'>All</a>
+			<li>
+			<li><a href='machinelearning.html'>Machine Learning</a></li>
+
+			<li><a href='ux.html' class="chosen">UX Design</a></li>
+			<li><a href='learning.html'>Learning</a></li>
+
+		</ul>
+	</div>
+
+	<div id="content" <div class="set set3">
+		<img class="three" src="img/home_05.jpg" data-over="img/cover_nlp.jpg" data-out="img/home_05.jpg " style="width:353px;height:489px;">
+		<p>
+			Live Story Book
+		</p>
+		<p class="last">
+			Voice-enabled AR Book
+		</p>
+	</div>
+
+	<div class="set set4">
+		<img class="four" src="img/home_06.jpg" data-over="img/cover_ux.jpg" data-out="img/home_06.jpg" style="width:353px;height:489px;">
+		<p>
+			Personalized News Feed
+		</p>
+		<p class="last">
+			New York Times-Concept Project
+		</p>
+	</div>
+
+	</div>
+	<div class="gallery">
+		<div class="sliding">
+			<div class="group1">
+				<img src="./img/ux_slide_01.jpg" style="width:960px;height:450px" ;>
+				<div class="top-right">Fluid User Experince For Machine Learning</div>
+			</div>
+			<div class="group1">
+				<img src="./img/ux_slide_02.jpg" style="width:960px;height:450px" ;>
+				<div class="top-right">Streamline Design For Meta Learning Models</div>
+			</div>
+			<div class="group1">
+				<img src="./img/ux_slide_03.jpg" style="width:960px;height:450px" ;>
+				<div class="top-right">Design Patient Centered Experince</div>
+			</div>
+			<div class="group1">
+				<img src="./img/ux_slide_04.jpg" style="width:960px;height:450px" ;>
+				<div class="top-right">Create Mixed Reality Experince</div>
+			</div>
+		</div>
+
+	</div>
+	<article>
+
+
+	</article>
+
+	<div id="footer">
+
+		<p>&copy; Copyright 2022</p>
+	</div>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="./js/scripts.js"></script>
+	<script>
+		$('.group1:gt(0)').css({
+			'left': '960px'
+		});
+
+		function slide_second_image() {
+			$('.group1:eq(1)').delay(2000).animate({
+				'left': '0px'
+			}, 1000);
+			$('.group1:eq(0)').delay(2000).animate({
+				'left': '-960px'
+			}, 1000, shuffle_first_image);
+
+		}
+
+		function shuffle_first_image() {
+			$('.group1:eq(0)').css({
+				'left': '960px'
+			}).appendTo('.sliding');
+			slide_second_image();
+		}
+
+		slide_second_image();
+	</script>
+
+</body>
+
+</html>

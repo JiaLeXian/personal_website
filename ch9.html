@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JialeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 9 : Finding Groups of Data Clustering with K-means</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Useful cases:</b></p>
+        <p>1. Segmenting customers into groups with similar demographics or buying patterns for targeted  marketing campaigns</p>
+        <p>2. Detecting anomalous behavior, such as unauthorized network intrusions, by identifying patterns of use falling outside the known clusters.</p>
+        <p>3. Simplifying extremely large datasets by grouping features with similar values into a smaller number of homogeneous categories.</p>
+        <p><b>Key Point 1:</b></p>
+        <p>The image analysis a clustering problem or classification problem. Since clustering is a unsupervised machine learning model, it can classifies unlabeled examples. One of the most difficult problems in medical image analysis is to get images labeled by the physicians. If it’s done by manually, it will be costing and time-consuming.  Maybe we can use clustering algorithms first to label images and then use classification algorithms to solve the problem.</b>
+        </p>
+        <p>Instead of using CNN (convolutional neural network ) solely for medical image analysis, it could be a semi-supervised learning model. 1st step: using clustering algorithms to label images, then 2nd, using decision trees or other classification algorithms to classify images.</p>
+        <p><b>Key Point 2:</b></p>
+        <p>The process of finding the significant features are done manually and complicated. After list all features with their data, you have to manually find out the biggest number and the most significant features manually. This is tedious and easy to cause errors. There should be a function to find them. Maybe a sort function to analyze the data.
+        </p>
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<div id='header'>
+  <h1>Jia Le Xian</h1>
+
+  <ul id="nav">
+    <li><a href='index.html' class="chosen">All</a>
+    <li>
+    <li><a href='machinelearning.html'>Machine Learning</a></li>
+
+    <li><a href='ux.html'>UX Design</a></li>
+    <li><a href='learning.html'>Learning</a></li>
+
+  </ul>
+</div>
+
+<head>
+  <title>JialeXian</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<style>
+  .header {
+    margin: 20px;
+    margin-bottom: 0px;
+  }
+
+  article {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  #featuredimg {
+    margin: 0px;
+  }
+
+  .supportingimg {
+    margin: auto;
+    display: block;
+  }
+
+  article p {
+    margin: 10px;
+  }
+
+  table {
+    margin: auto;
+    display: block;
+    margin-left: 300px;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .reference {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 40px;
+    letter-spacing: 1px;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .rightcolumn {
+    background-color: white;
+  }
+</style>
+
+<div class="header">
+  <h1>Chapter 7 : Blackbox Methods-Neural Networks & Support Vector Machines</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <article>
+        <p><b>Black Box Methods- Neural Networks and Support Vector Machines</b></p>
+        <p>An Artificial Neural Network(ANN) models the relationship between a set of input signals and an output signal using a model derived from our understanding of how a biological brain responds to stimuli from sensory inputs. ANN uses a
+          network of artificial neurons or nodes to solve learning problems.</p>
+        <p><b>Turing Test</b></p>
+        <p>. Proposed in 1950 by Alan Turing, grades a machine as intelligent if a human being cannot distinguish its behavior from a living creatures.</p>
+        <p><b>Uses:</b></p>
+        <p>. Best apply to problems where the input data and output data are well-defined or at least fairly simple, yet the process that relates the input to output is extremely complex</p>
+        <p><b>Three Characteristics of Neural Network</b>
+        </p>
+        <p>. An activation function, which transforms a neuron’s combined input signals into a single output signal to be broadcasted further in the network</p>
+        <p>. A network topology (or architecture), which describes the number of neurons in the models as well as the number of layers and manner in which they are connected.</p>
+        <p>. The training algorithms that specifies how connection weights are set in order to inhibit or excite neurons in proportion to the input signal.
+        </p>
+        <p><b>Activation Functions</b></p>
+        <p>Process incoming information and pass it through the network. A threshold activation function, as it results in an output signal only once a specified input threshold has been attained. Rarely used in real world.</p>
+        <p><b>Sigmoid Activation Function</b></p>
+        <p>Can fall anywhere between 0 to 1.</p>
+        <p>Is differentiable. It is possible to calculate the derivative across the entire range of inputs.</p>
+        <p><b>Sigmoid activation function is sometimes called squashing functions.</b></p>
+        <p>Different activation function serves different dataset. They key difference is the range of output signal.</p>
+        <p>The solution to squashing is to transform all neural network inputs such that the features’ values fall within a small range around 0.</p>
+        <p><b>Network Topology</b></p>
+        <p>The number of layers</p>
+        <p>Whether information in the network is allowed to travel backward.</p>
+        <p>The number of nodes within each layer of the network.</p>
+        <p><b>Deep Neural Network(DNN)</b></p>
+
+        <p> Multiple hidden layers is called Deep Neural Network and the practice of training such network is sometimes referred to as deep learning.</p>
+        <p><b>The direction of information travel</b></p>
+        <p>The addition of a short-term memory, or delay, increases the power of recurrent networks immensely. However, rarely used in the real world. Could be used in the stock market prediction, speech comprehension, or weather forecasting.</p>
+
+
+
+    </div>
+    </article>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="img/book_4.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+
+  <p>&copy; Copyright 2022</p>
+</div>
+</body>
+
+</html>
